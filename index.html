@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Digital Diary 📖</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background: #f4f4f4; }
+        .diary-container { background: white; padding: 20px; margin: auto; width: 50%; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+        textarea { width: 90%; height: 200px; padding: 10px; }
+        button { padding: 10px 20px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="diary-container">
+        <h1>My Digital Diary 📖</h1>
+        <textarea id="entry" placeholder="Write about your day..."></textarea>
+        <br>
+        <button onclick="saveEntry()">Save Entry</button>
+        <button onclick="getEntries()">Show Past Entries</button>
+        <button onclick="askAI()">Ask AI</button>
+        <p id="response"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
